@@ -1,7 +1,7 @@
 title: "Cyclistic_Project"
 author: "PASLAMU"
 date: "6/8/2021"
-output: pdf_document
+output: github_document
 ---
 ## Setting up my environment
 Notes: setting up my r environment by loading packages
