@@ -1,4 +1,4 @@
-# SQL Data-Analysis-Projects
+# SQL/R Data-Analysis-Projects
 ### Query Language
 * SQL/PSM
 * R
@@ -21,12 +21,16 @@ The versions linked here are subsets of the original datasets
 *  crimes involving an arrest
 *  etc.
 
-## [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study]
+## [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study](https://github.com/paslamu/Data-Analysis-Projects/tree/main/R_Projects)
  
  R capstone project for analyzing the public dataset Divvy Bikes [license info]( https://www.divvybikes.com/data-license-agreement) by Motivate
  International Inc. Analyzed 12 months of Divvy Tripdata (***Note: The datasets have a different name because Cyclistic is a fictional company***)
  1. In what ways do members & casual riders use divvy bikes differently?
- - 
+ -  Collect data
+ -  Wrangle data and combine into a single file
+ -  Clean uo and add data to prepare for analysis
+ -  Conduct descriptive analysis
+ -  Export summary file for further analysis
 
  
 
