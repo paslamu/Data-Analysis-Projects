@@ -32,7 +32,10 @@ The versions linked here are subsets of the original datasets
  -  Conduct descriptive analysis
  -  Export summary file for further analysis
  
-## [Palmerpenguins dataset](:[Data Analysis Practicing](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguin_dataset_analysis.md)
+## [Palmerpenguins dataset](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguins.csv): [Data Analysis Practice](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguin_dataset_analysis.md)
+
+* Built in R penguins dataset for practice purpose and utilizing of the R function
+
 
 
 
