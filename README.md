@@ -19,7 +19,6 @@ The versions linked here are subsets of the original datasets
 *  unique types of crimes (e.g. THEFT) have been recorded at a GAS STATION locations
 *  total number of crimes recorded in the crime table
 *  crimes involving an arrest
-*  etc.
 
 ## [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Cyclistic_Data_Projects.md)
  
@@ -28,7 +27,7 @@ The versions linked here are subsets of the original datasets
  1. In what ways do members & casual riders use divvy bikes differently?
  -  Collect data
  -  Wrangle data and combine into a single file
- -  Clean uo and add data to prepare for analysis
+ -  Clean up and add data to prepare for analysis
  -  Conduct descriptive analysis
  -  Export summary file for further analysis
  
