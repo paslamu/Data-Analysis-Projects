@@ -275,8 +275,8 @@ ggplot(data=penguins)+
     ## Warning: Using alpha for a discrete variable is not advised.
 
     ## Warning: Removed 2 rows containing missing values (geom_point).
+![penguins](https://user-images.githubusercontent.com/80533243/123299967-0c5f3780-d4e8-11eb-99df-47d73aed0821.jpeg)
 
-![](Penguin_dataset_analysis_files/figure-gfm/flipperlength%20and%20bodymass%20are%20directly%20correlated-1.png)<!-- -->
 
 ### Dividing the charts vertically by “sex” of the penguin species
 
@@ -285,10 +285,12 @@ ggplot(data = penguins)+
   geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species, shape = species))+
   facet_grid(~sex )
 ```
+![palmer penguin](https://user-images.githubusercontent.com/80533243/123300011-17b26300-d4e8-11eb-8475-c1cc24b8ba01.png)
+
+
 
     ## Warning: Removed 2 rows containing missing values (geom_point).
 
-![](Penguin_dataset_analysis_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ### Adding Title, subtitle, and providing data source information in graphic plot
 
@@ -299,6 +301,7 @@ ggplot(data = penguins)+
          "Data Collected by Dr. Kristen Gorman") + annotate("text", x= 220, y = 3500, label = "The Gentoo are the largest", color = "purple")
 ```
 
+
     ## Warning: Removed 2 rows containing missing values (geom_point).
 
-![](Penguin_dataset_analysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
