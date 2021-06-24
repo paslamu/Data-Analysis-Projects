@@ -775,6 +775,8 @@ all_trips_v2 %>%
   ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
   geom_col(position = "dodge")
 ```
+![Screen Shot 2021-06-24 at 9 59 07 AM](https://user-images.githubusercontent.com/80533243/123277003-b54f6780-d4d3-11eb-83fb-c998e1f56659.png)
+
 
     ## `summarise()` has grouped output by 'member_casual'. You can override using the `.groups` argument.
 
@@ -791,6 +793,8 @@ all_trips_v2 %>%
   ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
   geom_col(position = "dodge")
 ```
+![Screen Shot 2021-06-24 at 9 59 32 AM](https://user-images.githubusercontent.com/80533243/123277165-db750780-d4d3-11eb-93b7-6e68a6b7e93c.png)
+
 
     ## `summarise()` has grouped output by 'member_casual'. You can override using the `.groups` argument.
 
