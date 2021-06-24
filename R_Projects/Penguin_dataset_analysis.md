@@ -162,20 +162,20 @@ penguins_subset %>%
 ```
 
     ## # A tibble: 12 x 3
-    ##    species   island    sex   
-    ##    <fct>     <fct>     <fct> 
-    ##  1 Adelie    Biscoe    male  
-    ##  2 Adelie    Biscoe    male  
-    ##  3 Adelie    Dream     male  
-    ##  4 Gentoo    Biscoe    female
-    ##  5 Chinstrap Dream     male  
-    ##  6 Adelie    Torgersen female
-    ##  7 Gentoo    Biscoe    female
-    ##  8 Chinstrap Dream     female
-    ##  9 Gentoo    Biscoe    male  
-    ## 10 Gentoo    Biscoe    male  
-    ## 11 Adelie    Biscoe    female
-    ## 12 Adelie    Torgersen male
+    ##    species   island sex   
+    ##    <fct>     <fct>  <fct> 
+    ##  1 Gentoo    Biscoe male  
+    ##  2 Gentoo    Biscoe female
+    ##  3 Chinstrap Dream  male  
+    ##  4 Chinstrap Dream  female
+    ##  5 Adelie    Dream  male  
+    ##  6 Chinstrap Dream  male  
+    ##  7 Gentoo    Biscoe female
+    ##  8 Adelie    Dream  male  
+    ##  9 Chinstrap Dream  female
+    ## 10 Chinstrap Dream  female
+    ## 11 Gentoo    Biscoe male  
+    ## 12 Chinstrap Dream  male
 
 ## Just filtering the ‘Chinstrap’ species
 
@@ -232,12 +232,11 @@ penguins_subset %>%
   summarize(mean_bm= mean(body_mass_g, na.rm= TRUE),max_bl= max(bill_length_mm, na.rm = TRUE))
 ```
 
-    ## # A tibble: 3 x 3
-    ##   island    mean_bm max_bl
-    ##   <fct>       <dbl>  <dbl>
-    ## 1 Biscoe      4664.   50.4
-    ## 2 Dream       3600    50.9
-    ## 3 Torgersen   3888.   45.8
+    ## # A tibble: 2 x 3
+    ##   island mean_bm max_bl
+    ##   <fct>    <dbl>  <dbl>
+    ## 1 Biscoe   5250    49.8
+    ## 2 Dream    3781.   52.8
 
 ## Converting bodymass & filpper length from gram to kilogram
 
@@ -263,3 +262,43 @@ penguins %>%
     ## 10 Adelie  Torgersen           42            20.2               190        4250
     ## # … with 334 more rows, and 4 more variables: sex <fct>, year <int>,
     ## #   body_mass_kg <dbl>, flipper_length_m <dbl>
+
+## Creating a Visualization
+
+notes: Here we go through a series of visualization
+
+``` r
+ggplot(data=penguins)+
+  geom_point(mapping = aes(x= flipper_length_mm, y= body_mass_g, alpha= species))
+```
+
+    ## Warning: Using alpha for a discrete variable is not advised.
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+![](Penguin_dataset_analysis_files/figure-gfm/flipperlength%20and%20bodymass%20are%20directly%20correlated-1.png)<!-- -->
+
+### Dividing the charts vertically by “sex” of the penguin species
+
+``` r
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species, shape = species))+
+  facet_grid(~sex )
+```
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+![](Penguin_dataset_analysis_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+### Adding Title, subtitle, and providing data source information in graphic plot
+
+``` r
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x= flipper_length_mm, y= body_mass_g, color= species))+ 
+  labs(title = "Palmer Penguins: Body Mass vs. Flipper Length", subtitle = "Sample of Three Penguins Species", caption = 
+         "Data Collected by Dr. Kristen Gorman") + annotate("text", x= 220, y = 3500, label = "The Gentoo are the largest", color = "purple")
+```
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+![](Penguin_dataset_analysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
