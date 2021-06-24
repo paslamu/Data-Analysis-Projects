@@ -275,7 +275,7 @@ ggplot(data=penguins)+
     ## Warning: Using alpha for a discrete variable is not advised.
 
     ## Warning: Removed 2 rows containing missing values (geom_point).
-![penguins](https://user-images.githubusercontent.com/80533243/123299967-0c5f3780-d4e8-11eb-99df-47d73aed0821.jpeg)
+![palmer-species](https://user-images.githubusercontent.com/80533243/123301206-66acc800-d4e9-11eb-9f29-e08826b081cd.png)
 
 
 ### Dividing the charts vertically by “sex” of the penguin species
@@ -300,6 +300,8 @@ ggplot(data = penguins)+
   labs(title = "Palmer Penguins: Body Mass vs. Flipper Length", subtitle = "Sample of Three Penguins Species", caption = 
          "Data Collected by Dr. Kristen Gorman") + annotate("text", x= 220, y = 3500, label = "The Gentoo are the largest", color = "purple")
 ```
+![penguin-title](https://user-images.githubusercontent.com/80533243/123301234-70cec680-d4e9-11eb-8d90-fb335bd3ca92.png)
+
 
 
     ## Warning: Removed 2 rows containing missing values (geom_point).
