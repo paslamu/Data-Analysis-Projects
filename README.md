@@ -37,7 +37,7 @@ The versions linked here are subsets of the original datasets
 
 ## :movie_camera: [Movies dataset](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python](https://github.com/paslamu/Data-Analysis-Projects/blob/main/Python_Projects/Movies_Project.ipynb)
 
-* 
+Python project 
 
 
 
