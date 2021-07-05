@@ -1,4 +1,4 @@
-# SQL/R Data-Analysis-Projects
+# :blossom: Data-Analysis-Projects, Assignment and Pratice 
 ### Programming/Query Language
 * SQL/PSM
 * R 
@@ -7,7 +7,7 @@
 * IBM db2 cloud
 * R Studio
 * Jupyter notebook
-# Assignment And Projects
+# 📖 Assignment And Projects
 ## [Chicago’s Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ): [Data Analysis Assignment](https://github.com/paslamu/Data-Analysis-Projects/tree/main/CSV%20DATA)
 
 SQL project in Jupyter notebook for analyzing a real world dataset provided by the [Chicago Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t).
@@ -20,7 +20,7 @@ The versions linked here are subsets of the original datasets
 *  total number of crimes recorded in the crime table
 *  crimes involving an arrest
 
-## [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Cyclistic_Data_Projects.md)
+## 🚴 [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Cyclistic_Data_Projects.md)
  
  R capstone project for analyzing the public dataset Divvy Bikes [license info]( https://www.divvybikes.com/data-license-agreement) by Motivate
  International Inc. Analyzed 12 months of Divvy Tripdata (***Note: The datasets have a different name because Cyclistic is a fictional company***)
@@ -31,11 +31,13 @@ The versions linked here are subsets of the original datasets
  -  Conduct descriptive analysis
  -  Export summary file for further analysis
  
-## [Palmerpenguins dataset](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguins.csv): [Data Analysis Practice](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguin_dataset_analysis.md)
+## 🐧 [Palmerpenguins dataset](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguins.csv): [Data Analysis Practice](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguin_dataset_analysis.md)
 
 * Built in R penguins dataset for practice purpose and utilizing of the R function
 
-## [Movies dataset](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python](
+## :movie_camera: [Movies dataset](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python](https://github.com/paslamu/Data-Analysis-Projects/blob/main/Python_Projects/Movies_Project.ipynb)
+
+* 
 
 
 
