@@ -1,4 +1,4 @@
-# :blossom: Data-Analysis-Projects, Assignment and Pratice 
+# :blossom: Data-Analysis-Projects, Assignment and Practice 
 ### Programming/Query Language
 * SQL/PSM
 * R 
@@ -8,7 +8,7 @@
 * R Studio
 * Jupyter notebook
 # 📖 Assignment And Projects
-## [Chicago’s Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ): [Data Analysis Assignment](https://github.com/paslamu/Data-Analysis-Projects/tree/main/CSV%20DATA)
+## 🏙️ [Chicago’s Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ): [Data Analysis Assignment](https://github.com/paslamu/Data-Analysis-Projects/tree/main/CSV%20DATA)
 
 SQL project in Jupyter notebook for analyzing a real world dataset provided by the [Chicago Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t).
 The versions linked here are subsets of the original datasets
