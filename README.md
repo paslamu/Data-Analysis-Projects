@@ -1,11 +1,11 @@
 # SQL/R Data-Analysis-Projects
-### Query Language
+### Programming/Query Language
 * SQL/PSM
-* R
+* R 
+* Python
 ### Tools
 * IBM db2 cloud
 * R Studio
-### Python
 * Jupyter notebook
 # Assignment And Projects
 ## [Chicago’s Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ): [Data Analysis Assignment](https://github.com/paslamu/Data-Analysis-Projects/tree/main/CSV%20DATA)
@@ -34,6 +34,8 @@ The versions linked here are subsets of the original datasets
 ## [Palmerpenguins dataset](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguins.csv): [Data Analysis Practice](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Penguin_dataset_analysis.md)
 
 * Built in R penguins dataset for practice purpose and utilizing of the R function
+
+## [Movies dataset](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python](
 
 
 
