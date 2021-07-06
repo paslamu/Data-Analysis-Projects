@@ -12,13 +12,13 @@
 
 SQL project in Jupyter notebook for analyzing a real world dataset provided by the [Chicago Data Portal](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t).
 The versions linked here are subsets of the original datasets
-*  average school Safety Score
-*  sub-query todetermine which Community Area has the least value for school Safety Score
-*  top 5 Community Areas by average College Enrollment number of students
-*  schools in community areas 10 to 15 that are healthy school certified
-*  unique types of crimes (e.g. THEFT) have been recorded at a GAS STATION locations
-*  total number of crimes recorded in the crime table
-*  crimes involving an arrest
+*  Average school Safety Score
+*  Sub-query todetermine which Community Area has the least value for school Safety Score
+*  Top 5 Community Areas by average College Enrollment number of students
+*  Schools in community areas 10 to 15 that are healthy school certified
+*  Unique types of crimes (e.g. THEFT) have been recorded at a GAS STATION locations
+*  Total number of crimes recorded in the crime table
+*  Crimes involving an arrest
 
 ## 🚴 [Cyclistic Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html): [Data Analysis Case Study](https://github.com/paslamu/Data-Analysis-Projects/blob/main/R_Projects/Cyclistic_Data_Projects.md)
  
@@ -35,9 +35,12 @@ The versions linked here are subsets of the original datasets
 
 * Built in R penguins dataset for practice purpose and utilizing of the R function
 
-## :movie_camera: [Movies dataset](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python](https://github.com/paslamu/Data-Analysis-Projects/blob/main/Python_Projects/Movies_Project.ipynb)
+## :movie_camera: [Movie Industry](https://www.kaggle.com/danielgrijalvas/movies): [Data Analysis Python Project](https://github.com/paslamu/Data-Analysis-Projects/blob/main/Python_Projects/Movies_Project.ipynb)
 
-Python project 
+Python Movie project for analyzing Imdb movie dataset from kaggle from (***1986-2016***)
+* Uploading Movie dataset to analyzing and visualization
+* Factors effecting movie gross
+* Correlation between various aspects of movie dataset
 
 
 
