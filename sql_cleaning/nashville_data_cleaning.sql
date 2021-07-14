@@ -36,7 +36,6 @@ AND
  WHERE 
   a."PropertyAddress" is NULL
   
-
 -- Splitting the PropertyAddress with the city 
 SELECT
 SUBSTRING("PropertyAddress", 1, POSITION(',' IN "PropertyAddress")-1) AS address,
@@ -56,5 +55,77 @@ ADD "PropertyCity" varchar(255);
 UPDATE nashville_housing
 SET "PropertyCity" = SUBSTRING("PropertyAddress", POSITION(',' IN "PropertyAddress")+1 , LENGTH("PropertyAddress"))
 
+-- Splitting OwnerAddress with the delimiter function "SPLIT_PART" and creating a new column
+SELECT
+SPLIT_PART("OwnerAddress", ',', 1),
+SPLIT_PART("OwnerAddress", ',', 2),
+SPLIT_PART("OwnerAddress", ',', 3)
+FROM
+nashville_housing
+WHERE
+nashville_housing is not null
 
+ALTER TABLE nashville_housing
+ADD "OwnerFullAddress" varchar(255);
 
+UPDATE nashville_housing
+SET "OwnerFullAddress" = SPLIT_PART("OwnerAddress", ',', 1)
+
+ALTER TABLE nashville_housing
+ADD "OwnerCity" varchar(255);
+
+UPDATE nashville_housing
+SET "OwnerCity" = SPLIT_PART("OwnerAddress", ',', 2)
+
+ALTER TABLE nashville_housing
+ADD "OwnerState" varchar(255);
+
+UPDATE nashville_housing
+SET "OwnerState" = SPLIT_PART("OwnerAddress", ',', 3
+
+-- Changing, combining and updating "Sold as vacant" column from 'Y' and 'N' to "Yes" and "No".
+SELECT
+DISTINCT("SoldAsVacant"), COUNT(*)
+FROM 
+nashville_housing
+GROUP BY "SoldAsVacant"
+ORDER BY 2
+
+SELECT
+   "SoldAsVacant",
+CASE   
+    WHEN "SoldAsVacant" = 'NO' THEN 'No'
+    ELSE "SoldAsVacant"
+	END
+FROM
+  nashville_housing
+     
+UPDATE nashville_housing
+SET "SoldAsVacant" = CASE   
+    WHEN "SoldAsVacant" = 'NO' THEN 'No'
+    ELSE "SoldAsVacant"
+	END
+
+--Remove duplicates (window functions) AND TEMP TABLE
+
+WITH RowNumCTE AS(
+SELECT 
+  *, 
+ROW_NUMBER() OVER(
+PARTITION BY
+	"ParcelID", 
+	"SalePrice", 
+	"LegalReference"
+ORDER BY 
+	"UniqueID"
+     ) row_num 
+FROM
+  nashville_housing
+ORDER BY 
+  "ParcelID"
+)
+SELECT
+*
+FROM
+RowNumCTE
+WHERE row_num > 1
