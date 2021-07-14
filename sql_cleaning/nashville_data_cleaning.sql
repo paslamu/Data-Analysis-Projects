@@ -22,4 +22,17 @@ SELECT
  WHERE 
   a."PropertyAddress" is NULL
   
+  UPDATE nashville_housing
+SET "PropertyAddress"= COALESCE(a."PropertyAddress", b."PropertyAddress")
+ FROM
+  nashville_housing as a
+ JOIN
+  nashville_housing as b
+ ON
+ a."ParcelID"= b."ParcelID"
+ AND
+ a."UniqueID"<> b."UniqueID"
+  WHERE 
+  a."PropertyAddress" is NULL
+  
 
