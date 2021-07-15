@@ -1,4 +1,4 @@
--- Changing the date from "string" data type to "date" data type and updating the column
+/*Changing the date from "string" data type to "date" data type and updating the column*/
 SELECT
  CAST("SaleDate" AS DATE)
 FROM
@@ -8,7 +8,7 @@ UPDATE
   nashville_housing
 SET "SaleDate" = CAST("SaleDate" AS DATE)
 
---Updating the null propertyaddress with the correct address
+/*Updating the null propertyaddress with the correct address*/
 SELECT
  a."ParcelID", a."PropertyAddress", b."ParcelID", b."PropertyAddress", COALESCE(a."PropertyAddress", b."PropertyAddress")
  FROM
@@ -36,7 +36,7 @@ AND
  WHERE 
   a."PropertyAddress" is NULL
   
--- Splitting the PropertyAddress with the city 
+/*Splitting the PropertyAddress with the city*/
 SELECT
 SUBSTRING("PropertyAddress", 1, POSITION(',' IN "PropertyAddress")-1) AS address,
 SUBSTRING("PropertyAddress", POSITION(',' IN "PropertyAddress")+1 , LENGTH("PropertyAddress"))as Address_1
@@ -55,7 +55,7 @@ ADD "PropertyCity" varchar(255);
 UPDATE nashville_housing
 SET "PropertyCity" = SUBSTRING("PropertyAddress", POSITION(',' IN "PropertyAddress")+1 , LENGTH("PropertyAddress"))
 
--- Splitting OwnerAddress with the delimiter function "SPLIT_PART" and creating a new column
+/*Splitting OwnerAddress with the delimiter function "SPLIT_PART" and creating a new column*/
 SELECT
 SPLIT_PART("OwnerAddress", ',', 1),
 SPLIT_PART("OwnerAddress", ',', 2),
@@ -81,9 +81,9 @@ ALTER TABLE nashville_housing
 ADD "OwnerState" varchar(255);
 
 UPDATE nashville_housing
-SET "OwnerState" = SPLIT_PART("OwnerAddress", ',', 3
+SET "OwnerState" = SPLIT_PART("OwnerAddress", ',', 3)
 
--- Changing, combining and updating "Sold as vacant" column from 'Y' and 'N' to "Yes" and "No".
+/*Changing, combining and updating "Sold as vacant" column from 'Y' and 'N' to "Yes" and "No"*/
 SELECT
 DISTINCT("SoldAsVacant"), COUNT(*)
 FROM 
@@ -106,8 +106,7 @@ SET "SoldAsVacant" = CASE
     ELSE "SoldAsVacant"
 	END
 
---Remove duplicates (window functions) AND TEMP TABLE
-
+/*Remove duplicates (window functions) AND TEMP TABLE*/
 WITH RowNumCTE AS(
 SELECT 
   *, 
