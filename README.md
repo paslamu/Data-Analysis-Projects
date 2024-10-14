@@ -1,7 +1,6 @@
 # :blossom: Data-Analysis-Projects, Assignment and Practice 
 ### Programming/Query Language
 * SQL/PSM
-* R 
 * Python
 ### Tools
 * IBM db2 cloud
